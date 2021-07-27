@@ -1,3 +1,4 @@
+// partialy taken from Arduino Library example
 //Initialize header files
 #include <WiFi.h>
 #include <Adafruit_SSD1306.h>
@@ -26,7 +27,7 @@ void setup() {
 
   while (WiFi.status() != WL_CONNECTED)
   {
-    delay(500);
+    delay(500); //in miliseconds
     Serial.print('.');
   }
 
